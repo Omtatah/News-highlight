@@ -8,7 +8,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>News-4-U</title>
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+    
+        .bg {
+            /* The image used */
+            background-image: url("news-3.jpg");
+    
+            /* Full height */
+            height: 100%;
+    
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+
 </head>
 <body style="background-color: rgb(76, 167, 23)">
     <div class="container">
@@ -27,4 +48,22 @@
         
         {{ macro.displaySourceList(technology_sources)}}
 
+        <!-- Business News Section  -->
+        <h2> Business </h2>
+        <hr>
     
+        {{ macro.displaySourceList(sources)}}
+    
+        <!-- Entertainment News Section  -->
+    
+        <h2> Entertainment </h2>
+        <hr>
+    
+        {{ macro.displaySourceList(entertainment_sources)}}
+    
+        
+    
+    </div>
+</body>
+</html>
+{%endblock%}
