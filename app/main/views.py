@@ -16,3 +16,11 @@ def index():
 	title = "News Highlighter"
 
 	return render_template('index.html',title = title, sources = sources,sports_sources = sports_sources,technology_sources = technology_sources,entertainment_sources = entertainment_sources)
+
+@main.route('/sources/<id>')
+def articles(id):
+	'''
+	view articles page
+	'''
+	articles = get_articles(id)
+	title = f'NH | {id}'
