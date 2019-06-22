@@ -94,9 +94,4 @@ def process_articles(articles_list):
 			articles_result = Articles(id,author,title,description,url,image,date)
 			articles_object.append(articles_result)	
 		
-
-		
-
-		
-
 	return articles_object
