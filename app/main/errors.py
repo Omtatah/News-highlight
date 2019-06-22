@@ -1,0 +1,3 @@
+#note to myself
+#though you might not code here, remember to: 
+#put in any errors faced here while building the app... this will help me manage my app better... remember to remove any errors you solve to avoid a wild goose chase of bugs and errors...
