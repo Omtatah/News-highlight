@@ -11,6 +11,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        #footr{
+            text-align: center;
+            font-size: 24px;
+            color: whitesmoke;
+        }
+        .footr{
+            padding-top: 10px;
+            border: 2px #212121;
+            background-color: #212121;
+            width: 100%
+        }
         h2{
             color:black;
             /* text-align: center; */
@@ -27,32 +38,35 @@
     <div class="container">
 
         <!-- Sports News Section  -->
-
-        <h2> Sports </h2>
+        
+        <h2> 🏈Sports⚽ </h2>
         <hr>
 
         {{ macro.displaySourceList(sports_sources)}}
 
         <!-- Technology News Section  -->
 
-        <h2> Technology </h2>
+        <h2> 📡Technology📠 </h2>
         <hr>
 
         {{ macro.displaySourceList(technology_sources)}}
 
         <!-- Business News Section  -->
-        <h2> Business </h2>
+        <h2> 💼Business💻 </h2>
         <hr>
 
         {{ macro.displaySourceList(sources)}}
 
         <!-- Entertainment News Section  -->
 
-        <h2> Entertainment </h2>
+        <h2> 🎮Entertainment🎉 </h2>
         <hr>
 
         {{ macro.displaySourceList(entertainment_sources)}}
 
+    </div>
+    <div class='footr'>
+        <p id='footr'><marquee>|🔮  Did you know that the word NEWS is actually an acronymn for North, East, West and South?   |🔮  Did you know that the first pages to be printed on a newspaper are the paid advertisements and the remaining spaces is what they use for their content? </marquee></p>
     </div>
 </body>
 
